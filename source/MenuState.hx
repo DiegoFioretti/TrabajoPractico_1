@@ -12,6 +12,8 @@ class MenuState extends FlxState
 	override public function create():Void
 	{
 		super.create();
+		Reg.highscore = 1000;
+		Reg.highscore += Reg.puntosOvni;
 	}
 
 	override public function update(elapsed:Float):Void
